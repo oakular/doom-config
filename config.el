@@ -27,6 +27,19 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-nord)
 
+(add-to-list 'default-frame-alist '(height . 64))
+    (add-to-list 'default-frame-alist '(width . 120))
+
+(setq-default inhibit-startup-screen t)
+(setq inhibit-splash-screen t)
+(setq inhibit-startup-message t)
+(setq initial-scratch-message "")
+
+(setq app-name "Emacs")
+(setq doom-fallback-buffer-name app-name
+      +doom-dashboard-name app-name)
+(setq-default frame-title-format '("%b"))
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
