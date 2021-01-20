@@ -1,6 +1,6 @@
 ;;; tools/vagrant/config.el -*- lexical-binding: t; -*-
 
-(after! vagrant
+(use-package! vagrant
   :config
   (map! :leader
         (:prefix "v" :desc "Vagrant Up"  :n "u" #'vagrant-up)
