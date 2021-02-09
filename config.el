@@ -68,3 +68,21 @@
 
 (after! evil
   (map! :leader "SPC" 'evil-ex-nohighlight))
+
+(when IS-MAC
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'none)
+  (setq mouse-wheel-scroll-amount '(1
+                                    ((shift) . 5)
+                                    ((control))))
+  (global-set-key [(meta h)] 'ns-do-hide-emacs))
+
+(map! :map eshell-mode-map "C-l" #'eshell/clear)
+
+(setq eshell-prefer-lisp-functions t)
+
+;; (after! js2-mode
+;;  (setq js-indent-level 4))
+(setq-hook! js2-mode js-indent-level 4)
+(setq lsp-ui-sideline-enable nil)
+
