@@ -72,6 +72,7 @@
 (when IS-MAC
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'none)
+  (setq ns-auto-titlebar-mode nil)
   (setq mouse-wheel-scroll-amount '(1
                                     ((shift) . 5)
                                     ((control))))
