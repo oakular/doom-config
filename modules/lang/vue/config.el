@@ -9,3 +9,4 @@
 (define-derived-mode vue-web-mode web-mode "Vue Web Mode")
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-web-mode))
 (add-hook 'vue-web-mode-hook #'lsp!)
+(setq-hook! 'vue-web-mode-hook web-mode-script-padding 0)
