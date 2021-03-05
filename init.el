@@ -49,7 +49,7 @@
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        ;;window-select     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
-       zen               ; distraction-free coding or writing
+       ;; zen               ; distraction-free coding or writing
        pulse
        oakular/frame
 
@@ -113,6 +113,7 @@
        :os
        (:if IS-MAC macos)  ; improve compatibility with macOS
        tty               ; improve the terminal Emacs experience
+       oak/exec-from-shell
 
        :lang
        ;;agda              ; types of types of types of types...
@@ -150,7 +151,7 @@
        ;;lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
-       ;;nix               ; I hereby declare "nix geht mehr!"
+       nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        org               ; organize your plain life in plain text
        org-ext
@@ -181,6 +182,7 @@
        ;;(mu4e +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
+       oak/gnus
 
        :app
        ;;calendar
