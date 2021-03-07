@@ -50,8 +50,6 @@
        ;;window-select     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
        ;; zen               ; distraction-free coding or writing
-       pulse
-       oakular/frame
 
        :editor
        (evil +everywhere); come to the dark side, we have cookies
@@ -91,7 +89,6 @@
        ;;debugger          ; FIXME stepping through code, to help you add bugs
        ;;direnv
        docker
-       oak/docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
@@ -113,7 +110,6 @@
        :os
        ;; (:if IS-MAC macos)  ; improve compatibility with macOS
        tty               ; improve the terminal Emacs experience
-       oak/exec-from-shell
 
        :lang
        ;;agda              ; types of types of types of types...
@@ -182,7 +178,6 @@
        ;;(mu4e +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
-       oak/gnus
 
        :app
        ;;calendar
@@ -195,4 +190,13 @@
        (default +bindings +smartparens)
 
        :data
-       db)
+       db
+
+       :oak
+       docker
+       exec-from-shell
+       gnus
+       env
+       pulse
+       frame
+       )
