@@ -41,7 +41,7 @@
 (setq app-name "Emacs")
 (setq doom-fallback-buffer-name app-name
       +doom-dashboard-name app-name)
-(setq-default frame-title-format '("%b"))
+(setq-default frame-title-format '("%f"))
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
