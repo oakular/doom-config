@@ -19,15 +19,18 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Cascadia Code" :size 11)
-      doom-variable-pitch-font (font-spec :family "sans" :size 11))
+(setq doom-font (font-spec :family "Cascadia Code" :size 10)
+      doom-variable-pitch-font (font-spec :family "sans" :size 10))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
+(setq doom-solarized-dark-brighter-text t)
+(setq doom-solarized-dark-brighter-modeline t)
+(setq doom-solarized-dark-padded-modeline t)
 (setq doom-theme 'doom-solarized-dark)
 
-(add-to-list 'default-frame-alist '(height . 64))
+(add-to-list 'default-frame-alist '(height . 48))
     (add-to-list 'default-frame-alist '(width . 120))
 
 (setq-default inhibit-startup-screen t)
