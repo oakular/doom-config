@@ -41,7 +41,7 @@
 (setq app-name "Emacs")
 (setq doom-fallback-buffer-name app-name
       +doom-dashboard-name app-name)
-(setq-default frame-title-format '("%f" "%b"))
+(setq-default frame-title-format '("%f" " - " "%b"))
 
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
