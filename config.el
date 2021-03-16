@@ -41,11 +41,8 @@
 (setq app-name "Emacs")
 (setq doom-fallback-buffer-name app-name
       +doom-dashboard-name app-name)
-(setq-default frame-title-format '("%f"))
+(setq-default frame-title-format '("%f" "%b"))
 
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Dropbox/org/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
