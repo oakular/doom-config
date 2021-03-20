@@ -194,7 +194,9 @@
 
        :oak
        docker
+       ebook
        env
+       eshell
        exec-from-shell
        frame
        gnus
