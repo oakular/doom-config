@@ -17,7 +17,8 @@
   (buffer-face-mode))
 
 (add-hook 'org-agenda-mode-hook 'org-agenda-face-attr)
-(add-hook 'org-mode-hook 'org-face-attr)
+;; (add-hook 'org-mode-hook 'org-face-attr)
 
 (setq org-clock-mode-line-total 'today)
 (setq org-agenda-window-setup 'other-window)
+(setq org-agenda-archives-mode t)
