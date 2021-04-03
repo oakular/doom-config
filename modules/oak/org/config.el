@@ -1,6 +1,7 @@
 ;;; oak/org/config.el -*- lexical-binding: t; -*-
 
-(setq org-directory "~/Dropbox/org/")
+(setq org-directory "~/dropbox/org/")
+(setq org-agenda-files '("~/dropbox/org"))
 (setq org-agenda-tags-column 80)
 (setq org-archive-location (concat org-directory "archive/%s_archive::"))
 
