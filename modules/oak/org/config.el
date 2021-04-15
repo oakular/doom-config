@@ -1,6 +1,7 @@
 ;;; oak/org/config.el -*- lexical-binding: t; -*-
 
-(setq org-directory "~/Dropbox/org/")
+(setq org-directory "~/dropbox/org/")
+(setq org-agenda-files '("~/dropbox/org"))
 (setq org-agenda-tags-column 80)
 (setq org-archive-location (concat org-directory "archive/%s_archive::"))
 
@@ -17,7 +18,8 @@
   (buffer-face-mode))
 
 (add-hook 'org-agenda-mode-hook 'org-agenda-face-attr)
-(add-hook 'org-mode-hook 'org-face-attr)
+;; (add-hook 'org-mode-hook 'org-face-attr)
 
 (setq org-clock-mode-line-total 'today)
 (setq org-agenda-window-setup 'other-window)
+(setq org-agenda-archives-mode t)

@@ -1,6 +1,7 @@
 ;;; email/oak/gnus/config.el -*- lexical-binding: t; -*-
 
-(after! gnus (evil-collection-init 'gnus))
+(after! gnus
+  (evil-collection-init 'gnus))
 
 (setq gnus-select-method
  '(nnimap "outlook"
@@ -13,4 +14,5 @@
           (smtpmail-smtp-type 'starttls)
           (smtpmail-smtp-service 587)))
 
- (setq message-send-mail-function 'smtpmail-send-it)
+(setq message-send-mail-function 'smtpmail-send-it)
+(setq gnus-summary-line-format "%U%R%B %d - %f: %s\n")

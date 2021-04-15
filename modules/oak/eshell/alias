@@ -1,0 +1,12 @@
+alias capital awk -F ',' '{sum +  $2} END {print sum}'
+alias la ls -AlG
+alias lr ls -lagGFqt \!* | head
+alias ll ls -lG
+alias ls ls -GF
+alias dirs dirs -v
+alias gdb gdb -q
+alias view vim -R
+alias ledg ledger $*
+alias arty php artisan $*
+alias pgrtest ./vendor/phpunit/phpunit/phpunit $* --testdox
+alias mkpcast youtube-dl -x --audio-format=flac -o %(title)s.%(ext)s $1
